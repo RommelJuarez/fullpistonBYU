@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare | Full Piston</title>
+
+  <script type="module" crossorigin src="/assets/compare-DBjiordE.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-DnQXkxaQ.js">
+  <link rel="modulepreload" crossorigin href="/assets/ExternalServices-BQ9PCoV8.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-CMxcj-6w.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <header id="main-header" class="divider"></header>
+
+    <div class="min-h-screen w-full bg-gradient-to-b from-gray-900 to-gray-700 pt-40 pb-10">
+
+        <h1 class="text-4xl font-bold text-center mb-10">Car Comparison</h1>
+
+        <!-- CONTENEDOR DE LA TABLA -->
+        <div
+            class="group p-8 rounded-2xl bg-gradient-to-br from-[#4B0082]/60 to-[#0A0A0A] border border-[#4B0082]/40  shadow-xl  transition-all duration-500 ">
+
+            <!-- Tabla -->
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="border-b border-gray-600 text-gray-300">
+                        <th class="p-4 text-lg font-semibold">Specification</th>
+                        <th id="carA-title" class="p-4 text-lg font-semibold text-center">Car A</th>
+                        <th id="carB-title" class="p-4 text-lg font-semibold text-center">Car B</th>
+                    </tr>
+                </thead>
+
+                <tbody id="compare-table-body">
+
+                    <!-- Las filas se llenarán dinámicamente -->
+                    <!-- Ejemplo de fila:
+                    <tr>
+                        <td class="p-4 font-medium">Model</td>
+                        <td class="p-4 text-center">Honda Civic</td>
+                        <td class="p-4 text-center">Toyota Corolla</td>
+                    </tr>
+                    -->
+
+                </tbody>
+            </table>
+
+            <!-- Botón comparación -->
+            <div class="mt-10 text-center">
+                <button
+                    class="btn-ai-compare bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-3 rounded-lg text-lg shadow">
+                    Compare Now
+                </button>
+            </div>
+            <div id="ai-result"
+                class="mt-6 max-w-3xl mx-auto bg-gray-50/90 backdrop-blur-md rounded-2xl shadow-xl p-6 text-gray-900 hidden border border-gray-200/50 pulse-shadow">
+                <h2 class="text-2xl font-bold mb-4 gradient-text">AI Recommendation</h2>
+                <p id="ai-result-text" class="whitespace-pre-line text-lg"></p>
+            </div>
+            
+
+
+        </div>
+
+    </div>
+
+    <footer id="main-footer"></footer>
+
+</body>
+
+</html>

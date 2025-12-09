@@ -6,34 +6,32 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo más grande -->
         <div class="flex items-center group">
-          <img
-            src="/images/fullpiston34.png"
-            alt="Full Piston Logo"
-            class="w-34 h-12 md:w-34 md:h-14 object-contain group-hover:scale-110 transition-transform duration-300"
-          />
+          <a href="/">
+            <img
+              src="/images/fullpiston34.png"
+              alt="Full Piston Logo"
+              class="w-34 h-12 md:w-34 md:h-14 object-contain group-hover:scale-110 transition-transform duration-300"
+            />
+          </a>
         </div>
 
         <!-- Links alineados a la derecha -->
         <div class="hidden md:flex items-center space-x-10">
           <a
-            href="#"
+            href="/search/index.html"
             class="text-base font-medium text-gray-300 hover:text-[#FF6A00] transition-colors duration-300"
             >Search</a
           >
           <a
-            href="#"
+            href="/compare/index.html"
             class="text-base font-medium text-gray-300 hover:text-[#FF6A00] transition-colors duration-300"
             >Compare</a
-          >
-          <a
-            href="#"
-            class="text-base font-medium text-gray-300 hover:text-[#FF6A00] transition-colors duration-300"
-            >Gallery</a
           >
         </div>
 
         <!-- Icono mobile -->
         <button
+          id="mobile-menu-btn"
           class="p-2 text-gray-300 hover:text-[#FF6A00] hover:bg-[#4B0082]/20 rounded-full transition-all duration-300 md:hidden"
         >
           <svg
@@ -50,6 +48,23 @@
             />
           </svg>
         </button>
+      </div>
+
+      <!-- Menú móvil -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-4 pb-4 space-y-3 bg-[#0A0A0A]/90 backdrop-blur-xl border-t border-[#4B0082]/30"
+      >
+        <a
+          href="/search/index.html"
+          class="block text-base font-medium text-gray-300 hover:text-[#FF6A00] transition-colors duration-300"
+          >Search</a
+        >
+        <a
+          href="/compare/index.html"
+          class="block text-base font-medium text-gray-300 hover:text-[#FF6A00] transition-colors duration-300"
+          >Compare</a
+        >
       </div>
     </div>
   </div>

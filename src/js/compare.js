@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (cars.length !== 2) {
       resultBox.classList.remove("hidden");
-      resultText.textContent = "You need exactly 2 cars in comparison to use AI.";
+      resultText.textContent =
+        "You need exactly 2 cars in comparison to use AI.";
       return;
     }
 
@@ -83,22 +84,24 @@ function renderComparison() {
     { label: "Price (USD)", key: "priceUSD" },
     { label: "Fuel", key: "fuel" },
     { label: "FIPE Code", key: "codeFipe" },
-    { label: "Reference", key: "referenceMonth" }
+    { label: "Reference", key: "referenceMonth" },
   ];
 
   // ---- Generate all rows (store in rowsHtml) ----
-  const rowsHtml = fields.map(f => {
-    const a = carA?.[f.key] ?? "—";
-    const b = carB?.[f.key] ?? "—";
+  const rowsHtml = fields
+    .map((f) => {
+      const a = carA?.[f.key] ?? "—";
+      const b = carB?.[f.key] ?? "—";
 
-    return `
+      return `
       <tr class="border-b border-gray-700">
         <td class="p-4 font-medium text-gray-300">${escapeHtml(f.label)}</td>
         <td class="p-4 text-center text-white">${escapeHtml(String(a))}</td>
         <td class="p-4 text-center text-white">${escapeHtml(String(b))}</td>
       </tr>
     `;
-  }).join("");
+    })
+    .join("");
 
   // ---- Images row (above all) ----
   const imagesRow = `
@@ -117,7 +120,7 @@ function renderComparison() {
   tableBody.innerHTML = imagesRow + rowsHtml;
 
   // ---- Activate delete buttons ----
-  document.querySelectorAll(".remove-compare").forEach(btn => {
+  document.querySelectorAll(".remove-compare").forEach((btn) => {
     btn.addEventListener("click", () => {
       const make = btn.getAttribute("data-make");
       const model = btn.getAttribute("data-model");

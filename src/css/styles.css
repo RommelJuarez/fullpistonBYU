@@ -1,32 +1,42 @@
 @import "tailwindcss";
 
+/* Gradient animated text */
+.gradient-text {
+  background: linear-gradient(270deg, #7f00ff, #ff6ec7, #00d4ff);
+  background-size: 600% 600%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 30s ease infinite;
+}
 
-  /* Gradient animated text */
-  .gradient-text {
-    background: linear-gradient(270deg, #7f00ff, #ff6ec7, #00d4ff);
-    background-size: 600% 600%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientMove 30s ease infinite;
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-  @keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+/* Pulsing shadow for the box */
+.pulse-shadow {
+  animation: shadowPulse 3s ease-in-out infinite;
+}
 
-  /* Pulsing shadow for the box */
-  .pulse-shadow {
-    animation: shadowPulse 3s ease-in-out infinite;
+@keyframes shadowPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(255, 105, 180, 0.4),
+      0 0 40px rgba(255, 182, 193, 0.2);
   }
-
-  @keyframes shadowPulse {
-    0%, 100% {
-      box-shadow: 0 0 20px rgba(255, 105, 180, 0.4), 0 0 40px rgba(255, 182, 193, 0.2);
-    }
-    50% {
-      box-shadow: 0 0 30px rgba(255, 105, 180, 0.6), 0 0 60px rgba(255, 182, 193, 0.4);
-    }
+  50% {
+    box-shadow:
+      0 0 30px rgba(255, 105, 180, 0.6),
+      0 0 60px rgba(255, 182, 193, 0.4);
   }
+}

@@ -41,7 +41,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       const msg = addCarToCompare(car);
       alert(msg);
     });
-
   } catch (error) {
     console.error("car-details.js error:", error);
     container.innerHTML = `

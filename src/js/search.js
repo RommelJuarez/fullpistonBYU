@@ -1,4 +1,8 @@
-import { searchCars, getCarImage, getYearsByModel } from "./ExternalServices.mjs";
+import {
+  searchCars,
+  getCarImage,
+  getYearsByModel,
+} from "./ExternalServices.mjs";
 
 const searchInput = document.getElementById("searchInput");
 const searchError = document.getElementById("searchError");
@@ -68,7 +72,7 @@ async function performSearch(query) {
 
           <a href="${detailURL}">
             <img 
-              src="${img || 'https://via.placeholder.com/400x250?text=No+Image'}" 
+              src="${img || "https://via.placeholder.com/400x250?text=No+Image"}" 
               alt="${car.make} ${car.model}"
               class="w-full h-40 object-cover"
             />
@@ -94,7 +98,7 @@ async function performSearch(query) {
           </div>
         </div>
       `;
-    })
+    }),
   );
 
   resultsContainer.innerHTML = cards.join("");

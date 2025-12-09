@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Piston</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header id="main-header" class="divider"></header>
+    
+    <!-- HERO SECTION -->
+    <section 
+      class="relative w-full h-[90vh] bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/images/hero.jpg');"
+    >
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#0A0A0A]/90"></div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 h-full flex flex-col justify-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-xl">
+          Find. Compare. Choose.
+        </h1>
+        <p class="mt-6 max-w-2xl text-lg md:text-xl text-white">
+          Explore the best cars, compare specs instantly, and make the perfect choice with precision.
+        </p>
+        <div class="mt-8 flex space-x-4">
+          <a href="/search/index.html"
+            class="px-6 py-3 rounded-full bg-[#FF6A00] text-white font-semibold shadow-lg hover:shadow-[#FF6A00]/40 transition-all duration-300"
+          >
+            Search Now
+          </a>
+          <a href="/compare/index.html"
+            class="px-6 py-3 rounded-full bg-white/10 border border-gray-300/20 text-gray-200 font-semibold backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
+          >
+            Compare
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="bg-[#0A0A0A] py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+          Explore Our Features
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+          <!-- Compare Card -->
+          <div 
+            class="group p-8 rounded-2xl bg-gradient-to-br from-[#4B0082]/60 to-[#0A0A0A] border border-[#4B0082]/40 hover:border-[#FF6A00] shadow-xl hover:shadow-orange-500/20 transition-all duration-500 cursor-pointer"
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">Compare Cars</h3>
+            </div>
+            <p class="mt-4 text-gray-300">
+              Compare price, year, fuel, and other key specs—all in one place with AI recommendations.
+            </p>
+            <a href="/compare/index.html" 
+               class="mt-6 inline-block px-5 py-2 bg-[#FF6A00] text-white rounded-full shadow-md hover:shadow-[#FF6A00]/40 transition-all">
+               Start Comparing
+            </a>
+          </div>
+
+          <!-- Search Card -->
+          <div 
+            class="group p-8 rounded-2xl bg-gradient-to-br from-[#4B0082]/60 to-[#0A0A0A] border border-[#4B0082]/40 hover:border-[#FF6A00] shadow-xl hover:shadow-orange-500/20 transition-all duration-500 cursor-pointer"
+          >
+            <div class="flex items-center justify-between">
+              <h3 class="text-2xl font-semibold text-white">Search Cars</h3>
+            </div>
+            <p class="mt-4 text-gray-300">
+              Quickly find vehicles by brand, model, price, or type to start your comparison journey.
+            </p>
+            <a href="/search/index.html"
+               class="mt-6 inline-block px-5 py-2 bg-[#FF6A00] text-white rounded-full shadow-md hover:shadow-[#FF6A00]/40 transition-all">
+               Start Searching
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY FULL PISTON -->
+    <section class="py-24 bg-gradient-to-b from-[#0A0A0A] to-black">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold text-white">
+          Why Full Piston?
+        </h2>
+        <p class="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
+          Compare cars with AI recommendations instantly for smarter decisions.
+        </p>
+        <div class="mt-12 grid grid-cols-1 md:grid-cols-1 gap-10">
+          <div class="p-8 bg-[#0A0A0A] border border-[#4B0082]/40 rounded-2xl shadow-lg">
+            <h3 class="text-xl font-semibold text-white mb-3">AI-Powered Comparison</h3>
+            <p class="text-white">
+              Get instant suggestions on which car is better based on the specs you provide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>
